@@ -11,7 +11,7 @@ spec:
       values: |
       {{ toYaml .Values.certManager | indent 2}}
     repoURL: https://charts.jetstack.io
-    targetRevision: 1.6.1
+    targetRevision: 1.7.1
 
   destination:
     server: {{ .Values.spec.destination.server }}
