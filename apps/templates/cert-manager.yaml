@@ -17,6 +17,12 @@ spec:
     server: {{ .Values.spec.destination.server }}
     namespace: cert-manager
 
+  ignoreDifferences: # https://github.com/cert-manager/cert-manager/issues/4114#issuecomment-1008162907
+    - group: admissionregistration.k8s.io
+      kind: ValidatingWebhookConfiguration
+      name: cert-manager-webhook
+      jqPathExpressions:
+        - .webhooks[].namespaceSelector.matchExpressions[] | select(.key == "control-plane")
   syncPolicy:
     automated: # automated sync by default retries failed attempts 5 times with following delays between attempts ( 5s, 10s, 20s, 40s, 80s ); retry controlled using `retry` field.
       selfHeal: true # Specifies if partial app sync should be executed when resources are changed only in target Kubernetes cluster and no git change detected ( false by default ).
