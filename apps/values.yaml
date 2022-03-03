@@ -4,3 +4,6 @@ spec:
   source:
     repoURL: https://github.com/catenax-ng/devops-apps.git
     targetRevision: HEAD
+
+certManager:
+  installCRDs: true
