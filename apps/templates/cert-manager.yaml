@@ -9,7 +9,7 @@ spec:
     chart: cert-manager
     helm:
       values: |
-      {{ toYaml .Values.certManager | indent 2}}
+      {{- toYaml .Values.certManager | nindent 8}}
     repoURL: https://charts.jetstack.io
     targetRevision: 1.7.1
 
