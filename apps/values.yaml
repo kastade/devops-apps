@@ -1,6 +1,6 @@
 spec:
   destination:
-    server: cxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
+    server: https://kubernetes.default.svc  #cxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
   source:
     repoURL: https://github.com/catenax-ng/devops-apps.git
     targetRevision: HEAD

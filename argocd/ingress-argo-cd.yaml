@@ -11,7 +11,7 @@ metadata:
     #nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
-    - host: argocd.{{ required "A value is required! (.Values.spec.destination.server)" .Values.spec.destination.server }}
+    - host: argocd.cxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
       http:
         paths:
           - path: /
@@ -23,5 +23,5 @@ spec:
                   number: 443
   tls:
     - hosts:
-        - argocd.{{ required "A value is required! (.Values.spec.destination.server)" .Values.spec.destination.server }}
+        - argocd.cxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
       secretName: argocd-secret
