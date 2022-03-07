@@ -11,7 +11,7 @@ metadata:
     #nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
-    - host: argo-cd.{{ required "A value is required! (.Values.spec.destination.server)" .Values.spec.destination.server }}
+    - host: argocd.{{ required "A value is required! (.Values.spec.destination.server)" .Values.spec.destination.server }}
       http:
         paths:
           - path: /
