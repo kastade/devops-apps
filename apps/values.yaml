@@ -1,6 +1,6 @@
 spec:
   destination:
-    server: https://kcxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
+    server: kcxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
   source:
     repoURL: https://github.com/catenax-ng/devops-apps.git
     targetRevision: HEAD
