@@ -11,7 +11,7 @@ metadata:
     #nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
-    - host: argocd.cxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
+    - host: argo.ef87d110858c4a87a300.germanywestcentral.aksapp.io
       http:
         paths:
           - path: /
@@ -23,5 +23,5 @@ spec:
                   number: 443
   tls:
     - hosts:
-        - argocd.cxtsicatenaxakssrv-20dd0bad.hcp.germanywestcentral.azmk8s.io
+        - argo.ef87d110858c4a87a300.germanywestcentral.aksapp.io
       secretName: argocd-secret
