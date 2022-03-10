@@ -23,6 +23,16 @@ spec:
                 name: argocd-server
                 port:
                   number: 443
+    - host: argo.demo.catena-x.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: argocd-server
+                port:
+                  number: 443
 #  tls:
 #    - hosts:
 #        - argo.ef87d110858c4a87a300.germanywestcentral.aksapp.io
