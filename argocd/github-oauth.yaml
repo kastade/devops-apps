@@ -1,0 +1,18 @@
+# Create OAuth App Client ID/Secret (e.g. https://github.com/organizations/catenax-ng/settings/applications)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+data:
+  dex.config: |
+    connectors:
+      - type: github
+        id: github
+        name: GitHub
+        config:
+          clientID: {{ required "A valid value is required! (.Values.github.clientId)" .Values.github.clientId }}
+          clientSecret: {{ required "A valid value is required! (.Values.github.clientSecret)" .Values.github.clientSecret }}
+          orgs:
+          - name: {{ required "A valid value is required! (.Values.github.orgName)" .Values.github.orgName }}
+  url: {{ required "A valid value is required! (.Values.github.argoUrl)" .Values.github.argoUrl }}
