@@ -8,6 +8,7 @@ metadata:
     appgw.ingress.kubernetes.io/backend-protocol: https
     kubernetes.io/ingress.class: addon-http-application-routing # using Azure nginx ingress controller
     nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+    test.yo: "SCHAHAHALALALALA IN THE MORNGING!!!"
     #cert-manager.io/cluster-issuer: letsencrypt-prod
     #nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     #nginx.ingress.kubernetes.io/ssl-passthrough: "true"
