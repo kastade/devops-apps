@@ -18,5 +18,9 @@ spec:
               service:
                 name: argocd-server
                 port:
-                  number: 443
+                  number: 80
+#  tls:
+#    - hosts:
+#        - argo.rico-play.ids-dev.shoot.canary.k8s-hana.ondemand.com
+#      secretName: argocd-secret
 
