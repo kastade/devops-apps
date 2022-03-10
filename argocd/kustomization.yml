@@ -8,3 +8,6 @@ namespace: argocd
 resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/v2.0.4/manifests/ha/install.yaml
 - https://raw.githubusercontent.com/argoproj-labs/applicationset/v0.3.0/manifests/install.yaml
+
+commonLabels:
+  provided-by: team-dev-sec-ops
