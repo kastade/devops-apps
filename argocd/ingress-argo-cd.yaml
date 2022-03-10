@@ -14,7 +14,7 @@ metadata:
     #nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
   rules:
-    - host: argo.ef87d110858c4a87a300.germanywestcentral.aksapp.io
+    - host: argo.a7b11f105be54ef2b2b3.germanywestcentral.aksapp.io
       http:
         paths:
           - path: /
